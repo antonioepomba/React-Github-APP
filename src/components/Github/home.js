@@ -15,27 +15,11 @@ class Home extends Component {
       display:'none',
       disp :'flex',
       back:'none',
-      perPage: 10
+      perPage: 10,
+      currentPage: 0
     }
   }
-  Somar = () => {
-
-
-    return this.setState({
-        perPage: this.state.perPage + 10
-    })
-
-}
-
-reduzir = () => {
-
-
-
-    return this.setState({
-        perPage: this.state.perPage - 10
-    })
-
-}
+  
   // Get User's profile information from github API
   getUserData = () => {
     fetch(urlUserData(this.state.username))
@@ -74,6 +58,18 @@ reduzir = () => {
         console.log('There was a problem with fetch operation:' + error.message)
       })
   }
+      handlePageClick = (e) => {
+        const selectedPage = e.selected;
+        const offset = selectedPage * this.state.perPage;
+
+        this.setState({
+            currentPage: selectedPage,
+            offset: offset
+        }, () => {
+            this.receivedData()
+        });
+
+    };
 
   handleFormSubmit = (username) => {
     this.setState({ username }, function () {
