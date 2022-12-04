@@ -6,20 +6,20 @@ class RepoList extends Component {
 
     render() {
         return (
-            <div className='list-container'>
-                
+            <section className='list-container'>
+
                 <div>
-                   {
-                       this.props.userRepos.map(repo => {
-                           return <Repo
-                                    repo= {repo}
-                                    key={repo.id}
-                                    {...this.props}
-                           />
-                       })
-                   }
+                    {
+                        this.props.userRepos.map(repo => {
+                            return <Repo
+                                repo={repo}
+                                key={repo.id}
+                                {...this.props}
+                            />
+                        })
+                    }
                 </div>
-            </div>
+            </section>
         );
     }
 }

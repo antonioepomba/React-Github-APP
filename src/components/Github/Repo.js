@@ -5,7 +5,7 @@ class Repo extends Component {
     render() {
         const { repo } = this.props;
         return (
-            <div className='repo'>
+            <section className='repo'>
                 <hr />
                 
                 <div className="card-repo">
@@ -17,7 +17,7 @@ class Repo extends Component {
                         <p className="texto">{repo.description}</p>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

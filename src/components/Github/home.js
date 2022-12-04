@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Profile from './User_Profile';
 import Search from './Search';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {urlUserData,urlUserRepo} from '../../util/endPoint'
 import 'whatwg-fetch';
 
 class Home extends Component {
@@ -17,10 +18,27 @@ class Home extends Component {
       perPage: 10
     }
   }
+  Somar = () => {
 
+
+    return this.setState({
+        perPage: this.state.perPage + 10
+    })
+
+}
+
+reduzir = () => {
+
+
+
+    return this.setState({
+        perPage: this.state.perPage - 10
+    })
+
+}
   // Get User's profile information from github API
   getUserData = () => {
-    fetch('http://api.github.com/users/' + this.state.username)
+    fetch(urlUserData(this.state.username))
       .then(function (response) {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -39,7 +57,7 @@ class Home extends Component {
   }
   // Get User's repositories Github API call
   getUserRepos = () => {
-    fetch('http://api.github.com/users/' + this.state.username + '/repos?per_page=' + this.state.perPage + '&sort=created')
+    fetch(urlUserRepo(this.state.username,this.state.perPage))
       .then(function (response) {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -73,7 +91,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <section>
         <Search onFormSubmit={this.handleFormSubmit.bind(this)}
         disp={this.state.disp} />
         <Profile {...this.state}
@@ -85,7 +103,7 @@ class Home extends Component {
         disp='none' />}/>
        </Routes>
       </Router>
-      </div>
+      </section>
     );
   }
 }
