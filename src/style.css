@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background:url(assets/images/banner.jpeg) center center fixed no-repeat; 
+  background-size: cover;
+  height: 100%;
+}
+.form-submit-button {
+	background: #0066A2;
+	color: white;
+	border-style: outset;
+	border-color: #0066A2;
+	height: 34px;
+  margin: 6px 0px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+}
+.text_input {
+  height: 44px;
+  width: 50%;
+  padding: 0;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 0;
+  margin: -2px 76px;
+  text-align: justify;
+  border: none;
+}
+.img-class{
+  margin: -12px -136px;
+  width: 54px;
+  height: 39px;
+}
+.text_input:focus {
+  outline: none;
+}
+.form-form{
+  width: 100%;
+  margin: 0px 70px;
+}
+.form-group{
+  margin: 139px 23px;
+}
+h3{
+  color: #f6f8f9;
+}
+@media (min-width: 1200px){
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+}
+.btn {
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: #1558a9c4;
+  color: white;
+  border: none;
+  font-weight: bold;
+
+  display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    width: 70px;
+    height: 45px;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin: 125px 522px;
+}
+.btn-btn{
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+    font-weight: 400;
+    height: 32px;
+    line-height: 1.25;
+    text-align: center;
+    background: black;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 200px;
+    margin: 277px 617px;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin: 135px 522px;
+}
+
+.btn:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+.badge {
+  margin-right: 1px;
+}
+
+.card-header{
+  background-color: #8c9aaf;
+  color: #fff;
+}
+.search-containerr{
+  display: flex;
+  margin: 93px 248px;
+  color: blue;
+}
+
+.jumbotron{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.jumbotron>h4 {
+  font-size: 3.2em;
+}
+.back-search-button{
+  margin: 6px 22px;
+    background: #006680;
+    border: none;
+    height: 33px;
+    border-radius: 10%;
+    color: white;
+}

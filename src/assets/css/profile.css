@@ -1,0 +1,106 @@
+.back-search-button {
+    margin: 6px 22px;
+    background: #006680;
+    border: none;
+    height: 33px;
+    border-radius: 10%;
+    color: white;
+}
+
+    .paraphs-container {
+        align-content: center;
+        margin: -449px 560px;
+    }
+    .list-container {
+        margin: 605px -32px;
+        background: #1f436c;
+        border: solid wheat;
+    }
+    .btn-profile{
+        color: rgb(20, 0, 91);
+       
+    }
+    .span1{
+        background: red;
+        height: 20px;
+        border: solid transparent;
+        border-radius: 3%;
+    }
+    .span1{
+        background: red;
+        height: 20px;
+        border: solid transparent;
+        border-radius: 3%;
+    }
+    .span2{
+        background: rgb(81, 0, 255);
+        height: 20px;
+        border: solid transparent;
+        border-radius: 3%;
+    }
+    .span3{
+        background: rgb(0, 255, 76);
+        height: 20px;
+        border: solid transparent;
+        border-radius: 3%;
+    }
+    .span4{
+        background: rgb(7, 1, 1);
+        height: 20px;
+        border: solid transparent;
+        border-radius: 3%;
+    }
+    .btn-back{
+        margin: 5px 90px;
+    border: none;
+    background: green;
+    color: wheat;
+    width: 70px;
+    border-radius: 8%;
+    height: 25px;
+    }
+    .card-foto-repo {
+          /* background: #9fa2af; */
+    margin: 24px 103px;
+    height: 508px;
+    /* width: 664px; */
+    text-align: center;
+    border-radius: -10%;
+    border: solid white;
+    }
+    .img-profile{
+        width: 231px;
+    }
+    .repo-ccontainer{
+        margin: -580px -51px;
+        width: 42%;
+    }
+.texto{
+      /* border: solid #f0e6e6; */
+      width: 454px;
+      border-top: none;
+      color: wheat;
+      border-left: none;
+      background: #1f436c;
+      /* border-right: none; */
+      margin: 95px -2px;
+      border-radius: 2%;
+}
+
+    .foto-titulo {
+        color: #fff;
+        background: none;
+    }
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.25;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        margin: 601px 1149px;
+
+    }
+    .container-paragrafo {
+        width: 450px;
+    }
